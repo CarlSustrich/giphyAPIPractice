@@ -4,15 +4,26 @@
   <title>Giphy API Practice</title>
 </head>
 <body>
-  <div class="container">
+  <div>
     <h1>Lets figure out GIFs</h1>
     <p>Enter a search term to see relevant GIFs!</p>
     <form>
       <label for="searchTerm">Enter a search term:</label>
       <input id="searchTerm" type="text" name="searchTerm">
       <button type="submit" class="btn-success" id="searchButton">See your Results</button>
+      <button type ="button" class='btn-success' id='trending'>See Trending GIFs!</button>
+      <button type ="button" class='btn-success' id='random'>See Random GIFs!</button>
     </form>
-    <p id="showResponse"></p>
+    <form id="uploadForm">
+      <label for="upload"> Choose a file to upload!</label>
+      <input type="file" id="upload" name="upload" accept="image/gif">
+      <input type="text" id="tags" name="tags">
+      <label for="tags">Enter your tags, separated by a comma</label>
+      <button type="submit" id="uploadSubmit"> Upload!</button>
+    </form>
+    <div class="container">
+      <p id="showResponse"></p>
+    </div>
   </div>
 </body>
 </html>

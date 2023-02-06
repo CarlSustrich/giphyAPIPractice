@@ -1,3 +1,13 @@
 body {
   background-color: lightblue;
 }
+
+#trending {
+  max-width: 25vw;
+}
+
+.imageResult {
+  max-width: 25vw;
+  height: auto;
+  display: inline-block;
+}
